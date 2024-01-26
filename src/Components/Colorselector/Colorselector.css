@@ -1,0 +1,69 @@
+.demo {
+        position: fixed;
+        top: 158px;
+        left: 0px;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+        display: fixed;
+        gap: 5px;
+        flex-direction: column;
+
+}
+
+.demo.visible {
+    left: -200px;
+
+}
+
+.settings {
+    position: relative;
+        cursor: pointer;
+        margin-left: 200px;
+    
+}
+
+.settings svg {
+    display: block;
+    transform: rotate(90deg);
+    margin-left: 200px;
+    color: black;
+        /* Adjust the margin value */
+}
+
+.color {
+    display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 6px;
+}
+
+
+
+.demo a {
+    text-decoration: none;
+}
+
+.demo a:focus {
+    outline: none;
+}
+
+.demo .reset {
+    border: none;
+    /* Remove any existing border */
+    border-radius: 0;
+    /* Set border-radius to 0 */
+    background-color: transparent;
+    /* Make background transparent */
+    color: inherit;
+    /* Inherit text color */
+}
+
+.demo .reset {
+    background-color: var(--main-color);
+    /* Set your desired color here */
+    color: black;
+    /* Set your desired text color here */
+}
+
