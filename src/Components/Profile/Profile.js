@@ -42,7 +42,7 @@ const Profile = () => {
       </div>
 
       <figure className="profile_image">
-        <img src={require("../../assets/images/Icon anime.png")} alt="" />
+        <img src={require("../../assets/images/Profile.jpg")} alt="" />
       </figure>
 
       <div className="profile_information">
