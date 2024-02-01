@@ -1,0 +1,36 @@
+Project Title: React Resume
+
+Project Author: Konwit Maikhoksung
+
+Usage Instructions:
+
+1. Clone the Project:
+Obtain the project by cloning the repository from GitHub.
+
+2. Startup Instructions:
+After cloning the project, open your preferred code editor, preferably Visual Studio Code.
+Launch the terminal within the editor.
+
+3.Start the Project:
+
+In the terminal, type the following command to start the project:
+
+
+
+
+Project Structure and Design Philosophy:
+
+In order to streamline the management of information across the React resume project, I have adopted a modular and data-driven approach. To avoid hardcoding and enhance maintainability, I've introduced a centralized component named resumeData. This component serves as a repository for all the essential data used throughout the website.
+
+Key Features:
+
+Centralized Data Storage:
+
+The resumeData component acts as a central hub for storing and organizing project-related information.
+Enhanced Reusability:
+
+By consolidating data into a single component, other modules can easily access and reuse specific information without the need for repetitive hardcoding.
+Dynamic Updates with useState:
+
+The portfolio component leverages the useState hook to dynamically manage the selected tab and project dialog, ensuring a seamless and interactive user experience.
+This structured approach not only improves code readability but also facilitates scalability and ease of future updates to the project.
