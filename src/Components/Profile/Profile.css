@@ -1,3 +1,4 @@
+/* Profile container styling */
 .profile {
     background-color: white;
     border-radius: 6px;
@@ -5,7 +6,8 @@
     display: inline-block;
 }
 
-.profile_name{
+/* Styling for the profile name section */
+.profile_name {
     line-height: 18px;
     padding: 20px;
 }
@@ -21,6 +23,7 @@
     color: #777;
 }
 
+/* Styling for the profile image */
 .profile_image {
     margin-top: -10px;
     -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
@@ -31,40 +34,41 @@
     width: 100%;
 }
 
-/*   information  */
+/* Information section styling */
 .profile_information {
     top: 0;
     left: 0;
     margin: -40px 10px 30px;
 }
 
+/* Timeline content styling within the information section */
 .profile_information .timeline .timeline_content {
     margin-top: 2px;
     margin-bottom: 12px;
 }
 
+/* Styling for the timeline item text */
 .timelineItem_text {
     font-size: 13.5px !important;
     color: #787878;
     font-weight: 400 !important;
 }
 
-.timelineItem_text > a {  
-    color: #787878; 
+.timelineItem_text>a {
+    color: #787878;
     text-decoration: none;
 }
 
-.timelineItem_text > span {
+.timelineItem_text>span {
     color: black;
-    
 }
 
-.profile .button_container{
+/* Styling for the button container */
+.profile .button_container {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-
 }
 
 

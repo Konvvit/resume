@@ -1,18 +1,18 @@
+/* Root variables for color customization */
 :root {
-    --main-color: #ffc500
+    --main-color: #ffc500;
 }
 
-/*   Margins and Paddings  */
+/* Margins and Paddings */
 .top_60 {
     margin-top: 60px !important;
-
 }
 
 .top_30 {
     margin-top: 30px !important;
 }
 
-.mb_30{
+.mb_30 {
     margin-bottom: 30px !important;
 }
 
@@ -29,27 +29,30 @@
 }
 
 .p_50 {
-    padding: 50px!important;
+    padding: 50px !important;
 }
 
-.mb_20{
+.mb_20 {
     margin-bottom: 20px !important;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 991px) {
     .top_60 {
         margin-top: 30px;
     }
 }
 
-/*   End of Margins and Paddings  */
+/* End of Margins and Paddings */
 
+/* Container with box shadow */
 .container_shadow {
-     box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
     -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
 }
 
+/* Main content styling */
 .main-content {
     background-color: white;
     min-height: 100vh;
@@ -57,17 +60,16 @@
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     margin-bottom: 30px;
-    
-
 }
 
+/* Section title styling */
 .section_title {
     position: relative;
     display: inline-block;
     padding: 0 3px;
 }
 
-.section_title .section_title_text{
+.section_title .section_title_text {
     font-size: 18px;
     font-weight: 600;
     position: relative;
@@ -82,17 +84,15 @@
     opacity: 0.4;
     left: 0;
     background-color: var(--main-color);
-
 }
 
-
-
+/* Section styling with padding */
 .section {
     padding-left: 30px;
     padding-right: 30px;
 }
 
+/* Background color for specific sections */
 .graybg {
-    background-color: #fafafa
-
+    background-color: #fafafa;
 }

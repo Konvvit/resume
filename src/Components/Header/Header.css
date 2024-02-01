@@ -1,51 +1,55 @@
-.header{
+/* Styling for the header section */
+.header {
     margin-bottom: 30px;
     background-color: white;
-    padding: 0 22 0 0px;
+    padding: 0 22px 0 0;
+    /* Adjusted padding value */
     border-radius: 6px;
     box-shadow: 0px 2px 92px 9px black rgb(0, 0, 0, 0.07);
 }
 
+/* Styling for the header navigation link */
 .header .header_navlink {
-    padding: 0
+    padding: 0;
 }
 
-.header .header_link{
+/* Styling for the header link */
+.header .header_link {
     font-weight: 500;
     color: darkslategray;
-
 }
 
-
-.header .header_link:hover{
+/* Styling for the header link on hover */
+.header .header_link:hover {
     color: var(--main-color);
 }
 
+/* Styling for the active navigation link */
 .navbar-nav .nav-link.active {
     font-weight: 500;
     color: var(--main-color);
-    
 }
 
-.header .header_home{
+/* Styling for the home section in the header */
+.header .header_home {
     background-color: var(--main-color);
     padding: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius:6px ;
+    border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
 
-
+/* Styling for the right section in the header */
 .header .header_right {
     display: flex;
     align-items: center;
     margin: auto;
-    
 }
 
-.header .header_right > a > .MuiSvgIcon-root {
+/* Styling for the icons within the right section of the header */
+.header .header_right>a>.MuiSvgIcon-root {
     font-size: 16px;
     margin-right: 12px;
     color: black;

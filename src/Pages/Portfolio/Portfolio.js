@@ -18,7 +18,10 @@ import {
 import resumeData from "../../utils/resumeData";
 import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 
+// Update the import path based on your folder structure
+
 const Portfolio = () => {
+  // State to manage selected tab and project dialog
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(false);
 
@@ -38,6 +41,7 @@ const Portfolio = () => {
           className="customTabs"
           onChange={(event, newValue) => setTabValue(newValue)}
         >
+          {/* All tab */}
           <Tab
             label="All"
             value="All"
@@ -46,9 +50,11 @@ const Portfolio = () => {
             }
           />
 
+          {/* Dynamically generated tabs based on project tags */}
           {[...new Set(resumeData.projects.map((item) => item.tag))].map(
             (tag) => (
               <Tab
+                key={tag}
                 label={tag}
                 value={tag}
                 className={
@@ -65,10 +71,11 @@ const Portfolio = () => {
       {/* Projects */}
       <Grid item xs={12}>
         <Grid container spacing={3}>
+          {/* Map through projects and display based on selected tab */}
           {resumeData.projects.map((project) => (
             <>
               {tabValue == project.tag || tabValue == "All" ? (
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item key={project.title} xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card
                       className="customCard"
@@ -104,6 +111,7 @@ const Portfolio = () => {
         </Grid>
       </Grid>
 
+      {/* Project Dialog */}
       <Dialog
         open={projectDialog}
         onClose={() => setProjectDialog(false)}
@@ -124,9 +132,12 @@ const Portfolio = () => {
             {projectDialog.description}
           </Typography>
         </DialogContent>
+
+        {/* Display project links */}
         <DialogActions className="projectDialog_actions">
           {projectDialog?.links?.map((link) => (
             <a
+              key={link.link}
               href={link.link}
               target="_blank"
               className="projectDialog_icon"

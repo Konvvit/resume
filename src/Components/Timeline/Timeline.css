@@ -1,21 +1,21 @@
+/* Adjustments to the timeline component */
 .timeline {
     padding: 0 !important;
 }
-   
-/* Header */
 
+/* Header styling */
 
-/* Header title */
-
+/* Header title styling */
 .timeline .timeline_header {
     padding-top: 7px;
-
 }
 
+/* First timeline item styling */
 .timeline .timeline_firstitem {
-    min-height: 80px !important; 
+    min-height: 80px !important;
 }
-        
+
+/* Additional adjustments for timeline items */
 .timeline .MuiTimelineItem-root {
     min-height: 0px;
 }
@@ -23,7 +23,8 @@
 .timeline .MuiTimelineItem-missingOppositeContent:before {
     display: none;
 }
-   
+
+/* Header dot styling */
 .timeline .timeline_dot_header {
     color: black;
     background-color: var(--main-color);
@@ -31,8 +32,7 @@
     padding: 10px;
 }
 
-/* remaining items */
-
+/* Remaining items dot styling */
 .timeline .timeline_dot {
     color: black;
     border-color: var(--main-color);
@@ -40,20 +40,23 @@
     padding: 2px;
 }
 
+/* Timeline connector styling */
 .timeline .MuiTimelineConnector-root {
     background-color: #eee;
-
 }
 
-.timeline .timeline_dot_header > .MuiSvgIcon-root {
+/* Header dot icon styling */
+.timeline .timeline_dot_header>.MuiSvgIcon-root {
     font-size: 20px;
     color: black;
 }
 
+/* Customization for timeline separators */
 .timeline .separator_padding {
     padding-left: 18px;
 }
 
+/* Content section of the timeline */
 .timeline .timeline_content {
     padding-top: 0px;
     margin-bottom: 20px;

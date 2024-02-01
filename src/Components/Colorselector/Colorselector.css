@@ -1,54 +1,56 @@
+/* Color Selector Container */
 .demo {
-        position: fixed;
-        top: 158px;
-        left: 0px;
-        width: 200px;
-        padding: 10px;
-        z-index: 1000;
-        transition: left 0.3s ease-in-out;
-        display: fixed;
-        gap: 5px;
-        flex-direction: column;
-
+    position: fixed;
+    top: 158px;
+    left: 0px;
+    width: 200px;
+    padding: 10px;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    display: fixed;
+    gap: 5px;
+    flex-direction: column;
 }
 
+/* Visibility Toggle */
 .demo.visible {
     left: -200px;
-
 }
 
+/* Settings Button */
 .settings {
     position: relative;
-        cursor: pointer;
-        margin-left: 200px;
-    
+    cursor: pointer;
+    margin-left: 200px;
 }
 
 .settings svg {
     display: block;
     transform: rotate(90deg);
     margin-left: 200px;
+    /* Adjust the margin value */
     color: black;
-        /* Adjust the margin value */
 }
 
+/* Color Options */
 .color {
     display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 6px;
+    width: 20px;
+    height: 20px;
+    margin: 6px;
 }
 
-
-
+/* Remove Link Styles */
 .demo a {
     text-decoration: none;
 }
 
+/* Focus Style for Links */
 .demo a:focus {
     outline: none;
 }
 
+/* Reset Button Styles */
 .demo .reset {
     border: none;
     /* Remove any existing border */
@@ -60,6 +62,7 @@
     /* Inherit text color */
 }
 
+/* Reset Button Styles with Custom Colors */
 .demo .reset {
     background-color: var(--main-color);
     /* Set your desired color here */

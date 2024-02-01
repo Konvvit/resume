@@ -1,16 +1,14 @@
-/*   About me section */
-
-.aboutme_text{
+/* About me section styling */
+.aboutme_text {
     color: darkslategray;
     font-size: smaller;
     line-height: 22px !important;
     white-space: pre-line;
-
 }
-/*   End of about me section */
 
-/*   Timeline section */
+/* End of About me section styling */
 
+/* Timeline section styling */
 .resume_timeline .timeline_content .Timeline_title {
     font-size: 16px;
     font-weight: 500;
@@ -20,20 +18,18 @@
     color: darkslategray;
 }
 
-.resume_timeline .timeline_content .timeline_description{
+.resume_timeline .timeline_content .timeline_description {
     color: gray;
     font-size: small;
     margin-top: 6px;
 }
 
+/* End of Timeline section styling */
 
-/*   End of timeline section */
-
-/*   Services section */
+/* Services section styling */
 .service {
     height: 100%;
     text-align: center;
-    
 }
 
 .service .service_title {
@@ -48,7 +44,6 @@
     border-color: var(--main-color);
     margin-right: 5px;
     text-align: center;
-
 }
 
 .service .service_icon {
@@ -58,29 +53,23 @@
     color: darkslategray;
     width: auto;
     height: auto;
-    
-    
 }
 
+/* End of Services section styling */
 
-/*   End of services section */
-
-/*   Skills */
-
+/* Skills section styling */
 .skill {
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0px 0px 48px 0px rgba(4, 5, 4, 0.08);
     min-height: 186px;
     height: 100%;
-
 }
 
-.skill .skill_title{
+.skill .skill_title {
     font-size: 14px;
     font-weight: 500;
     line-height: 35px;
-
 }
 
 .skill .skill_description {
@@ -89,47 +78,36 @@
     color: #989898;
     font-weight: 400;
     line-height: 18px;
-
 }
 
-.skill .skill_description .timeline_dot{
+.skill .skill_description .timeline_dot {
     border-color: var(--main-color);
     padding: 2px;
-    margin-right: 5px ;
-
+    margin-right: 5px;
 }
 
+/* End of Skills section styling */
 
-/*   end of Skills */
-
-/*   Contacts section */
-
+/* Contacts section styling */
 .contactInfo_item {
     font-size: 14px;
     color: #787878;
-
     line-height: 34px;
-
 }
 
-.contactInfo_item > span {
+.contactInfo_item>span {
     color: black;
     font-weight: 500;
-
 }
 
 .contactInfo_socialsContainer {
-   margin-top:25px ;
-
+    margin-top: 25px;
 }
 
-.contactInfo_social > a > .MuiSvgIcon-root {
+.contactInfo_social>a>.MuiSvgIcon-root {
     font-size: 16px;
     margin-right: 10px;
     color: black;
-
 }
 
-
-
-/*   End of contacts section*/
+/* End of Contacts section styling */

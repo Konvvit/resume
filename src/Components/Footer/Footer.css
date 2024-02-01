@@ -1,3 +1,4 @@
+/* Footer styles */
 .footer {
     background-color: #1e1e1e;
     color: white;
@@ -10,14 +11,16 @@
     padding: 20px 25px;
 }
 
+/* Footer copyright text styles */
 .footer .footer_copyright {
     font-size: small;
     text-align: end;
     color: #9c9c9c;
-    
-}
-.footer .footer_copyright > a {
-    text-decoration: none;
-    color: var(--main-color);
 }
 
+/* Styling for links within the copyright text */
+.footer .footer_copyright>a {
+    text-decoration: none;
+    color: var(--main-color);
+    /* Assuming --main-color is a CSS variable */
+}

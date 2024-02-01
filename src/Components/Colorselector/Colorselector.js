@@ -3,6 +3,7 @@ import "./Colorselector.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 
+// ColorSelector component
 const ColorSelector = ({ isColorSelectorVisible, toggleColorSelector }) => {
   const defaultResetButtonColor = "#ffc500"; // Set your default color here
 
@@ -10,7 +11,7 @@ const ColorSelector = ({ isColorSelectorVisible, toggleColorSelector }) => {
     document.documentElement.style.setProperty("--main-color", selectedColor);
     updateResetButtonColor(selectedColor);
   };
-
+  // Function to handle color change
   const updateResetButtonColor = (color) => {
     const resetButton = document.querySelector(".reset");
     if (resetButton) {
@@ -18,6 +19,7 @@ const ColorSelector = ({ isColorSelectorVisible, toggleColorSelector }) => {
     }
   };
 
+  // Function to update reset button color
   const handleReset = () => {
     // Reset to default color
     document.documentElement.style.setProperty(
@@ -34,7 +36,7 @@ const ColorSelector = ({ isColorSelectorVisible, toggleColorSelector }) => {
       <a href="#" className="settings" onClick={toggleColorSelector}>
         <FontAwesomeIcon icon={faCog} spin />
       </a>
-      <h5>SELECT A COLOR</h5>
+      <h5>Select a Color</h5>
       <a
         href="#orangeyellow"
         className="color"
