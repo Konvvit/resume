@@ -24,6 +24,12 @@
     margin-top: 6px;
 }
 
+.resume_timeline{
+    overflow-y: auto;
+        /* Set a max-height to limit the height and trigger the scrollbar */
+        max-height: 300px;
+}
+
 /* End of Timeline section styling */
 
 /* Services section styling */

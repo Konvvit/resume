@@ -8,6 +8,7 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
 import CustomButton from "../Button/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
+import DownloadButton from "../Button/DownloadButton";
 
 // CustomTimelineItem component to represent each item in the timeline
 const CustomTimelineItem = ({ title, text, link }) => (
@@ -33,17 +34,6 @@ const CustomTimelineItem = ({ title, text, link }) => (
 
 // Profile component representing the user's profile information
 const Profile = () => {
-  // Function to handle the download click
-  const handleDownloadClick = () => {
-    const link = document.createElement("a");
-    link.href =
-      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"; // Replace with the actual PDF link
-    link.download = "Your_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
@@ -72,11 +62,9 @@ const Profile = () => {
         </CustomTimeline>
 
         <div className="button_container">
-          {/* Add onClick handler to trigger download */}
-          <CustomButton
-            text={"Download Cv"}
-            icon={<GetAppIcon />}
-            onClick={handleDownloadClick}
+          <DownloadButton
+            pdfUrl="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            fileName="Your_CV.pdf"
           />
         </div>
       </div>

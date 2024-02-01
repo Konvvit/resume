@@ -72,4 +72,18 @@
 }
 
 
+.button_container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.button_container button {
+    background-color: var(--main-color) !important;
+    font-size: 18px !important;
+    font-weight: 100px !important;
+    border: 0 !important;
+    border-radius: 50px !important;
+    padding: 1px 12px !important;
+    line-height: 35px !important;
+    min-width: 100px !important;
+}
