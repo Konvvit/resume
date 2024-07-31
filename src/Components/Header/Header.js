@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Correctly import useNavigate
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomeIcon from "@mui/icons-material/Home";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -10,8 +10,11 @@ import CustomButton from "../Button/Button";
 import "./Header.css";
 
 const Header = (props) => {
-  // Extracting the current path
-  console.log("Resume");
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  const handleHireMeClick = () => {
+    navigate("/Contact"); // Navigate to the Contact page
+  };
 
   return (
     <Navbar expand="lg" sticky="top" className="header">
@@ -50,7 +53,7 @@ const Header = (props) => {
         </Nav>
 
         <Nav>
-          {/* Portfolio link */}
+          {/* Contact link */}
           <Nav.Link
             as={NavLink}
             to="/Contact"
@@ -65,6 +68,7 @@ const Header = (props) => {
           {/* Social media links */}
           {Object.keys(resumeData.socials).map((key) => (
             <a
+              key={key}
               href={resumeData.socials[key].link}
               target="_blank"
               rel="noreferrer"
@@ -74,7 +78,11 @@ const Header = (props) => {
           ))}
 
           {/* Custom button */}
-          <CustomButton text={"Hire me"} icon={<TelegramIcon />} />
+          <CustomButton
+            text={"Hire me"}
+            icon={<TelegramIcon />}
+            onClick={handleHireMeClick}
+          />
         </div>
       </Navbar.Collapse>
     </Navbar>
