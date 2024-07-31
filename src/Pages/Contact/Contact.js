@@ -3,20 +3,8 @@ import React from "react";
 import { Grid, Typography, TextField } from "@mui/material";
 import CustomeButton from "../../Components/Button/Button";
 import resumeData from "../../utils/resumeData";
-import { useDispatch } from "react-redux";
-import { setNotification, clearNotification } from "../../redux/nSlice";
 
 const Contact = () => {
-  const dispatch = useDispatch();
-
-  const handleSuccess = () => {
-    dispatch(setNotification({ message: "Success!", type: "success" }));
-  };
-
-  const handleError = () => {
-    dispatch(setNotification({ message: "Error!", type: "error" }));
-  };
-
   return (
     <Grid container spacing={5} className="section pt_45 pb_45">
       {/* Contact form */}
@@ -65,13 +53,13 @@ const Contact = () => {
             <Grid item xs={12}>
               <Typography className="contactInfo_item">
                 <span>Address:</span>
-                {resumeData.adress}
+                {resumeData.Address}
               </Typography>
             </Grid>
             <Grid item xs={12}>
               <Typography className="contactInfo_item">
                 <span>Phone:</span>
-                {resumeData.phone}
+                {resumeData.Phone}
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -94,10 +82,6 @@ const Contact = () => {
             </Grid>
           </Grid>
         </Grid>
-        <div>
-          <button onClick={handleSuccess}>Show Success</button>
-          <button onClick={handleError}>Show Error</button>
-        </div>
       </Grid>
     </Grid>
   );

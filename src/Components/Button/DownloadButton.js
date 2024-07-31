@@ -35,7 +35,7 @@ const DownloadButton = ({ pdfUrl, fileName }) => {
       download={fileName}
       style={{ color: "black" }}
     >
-      Download CV
+      CV
     </Button>
   );
 };

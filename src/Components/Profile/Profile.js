@@ -1,13 +1,11 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import CustomTimeline, { CustomeTimelineSeparator } from "../Timeline/Timeline";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import resumeData from "../../utils/resumeData";
 import "./Profile.css";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
-import CustomButton from "../Button/Button";
-import GetAppIcon from "@mui/icons-material/GetApp";
 import DownloadButton from "../Button/DownloadButton";
 
 // CustomTimelineItem component to represent each item in the timeline
@@ -34,6 +32,14 @@ const CustomTimelineItem = ({ title, text, link }) => (
 
 // Profile component representing the user's profile information
 const Profile = () => {
+  const [language, setLanguage] = useState("en"); // State to manage the selected language
+
+  // Define URLs for both CV versions
+  const cvUrls = {
+    en: "https://example.com/your_cv_english.pdf", // Replace with your actual English CV URL
+    sv: "https://example.com/your_cv_swedish.pdf", // Replace with your actual Swedish CV URL
+  };
+
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
@@ -42,7 +48,7 @@ const Profile = () => {
       </div>
 
       <figure className="profile_image">
-        <img src={require("../../assets/images/Profile.jpg")} alt="" />
+        <img src={require("../../assets/images/Profile.png")} alt="" />
       </figure>
 
       <div className="profile_information">
@@ -62,9 +68,21 @@ const Profile = () => {
         </CustomTimeline>
 
         <div className="button_container">
+          {/* Language Selector */}
+          <select
+            className="language-selector" // Add the class for styling
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+          >
+            <option value="en">English</option>
+            <option value="sv">Swedish</option>
+          </select>
+          {/* Download Button */}
           <DownloadButton
-            pdfUrl="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-            fileName="Your_CV.pdf"
+            pdfUrl={cvUrls[language]}
+            fileName={
+              language === "en" ? "Your_CV_English.pdf" : "Ditt_CV_Svenska.pdf"
+            }
           />
         </div>
       </div>

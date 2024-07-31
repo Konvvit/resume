@@ -3,9 +3,8 @@
     margin-bottom: 30px;
     background-color: white;
     padding: 0 22px 0 0;
-    /* Adjusted padding value */
     border-radius: 6px;
-    box-shadow: 0px 2px 92px 9px black rgb(0, 0, 0, 0.07);
+    box-shadow: 0px 2px 92px 9px rgba(0, 0, 0, 0.07); /* Corrected box-shadow syntax */
 }
 
 /* Styling for the header navigation link */
@@ -49,11 +48,12 @@
 }
 
 /* Styling for the icons within the right section of the header */
-.header .header_right>a>.MuiSvgIcon-root {
+.header .header_right > a > .MuiSvgIcon-root {
     font-size: 16px;
     margin-right: 12px;
     color: black;
 }
+
 
 
 

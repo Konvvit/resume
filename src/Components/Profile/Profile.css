@@ -79,7 +79,7 @@
 
 .button_container button {
     background-color: var(--main-color) !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: 100px !important;
     border: 0 !important;
     border-radius: 50px !important;
@@ -87,3 +87,49 @@
     line-height: 35px !important;
     min-width: 100px !important;
 }
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Aligns items to the start */
+    gap: 10px;
+    /* Optional: Adds space between the selector and button */
+}
+
+.language-selector {
+    padding: 1px;
+    /* Add padding for better spacing */
+    border: 1px solid var(--main-color);
+    /* Use your main color for the border */
+    border-radius: 7px;
+    /* Rounded corners */
+    background-color: var(--main-color);
+    /* Background color */
+    color: darkslategray;
+    /* Text color */
+    font-size: 12px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.language-selector:hover {
+    background-color: var(--main-color);
+    /* Change background on hover */
+    color: rgb(0, 0, 0);
+    /* Change text color on hover */
+}
+
+/* Focus effect */
+.language-selector:focus {
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 5px var(--main-color);
+    /* Add a shadow for focus */
+}
+

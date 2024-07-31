@@ -1,9 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import DataObjectIcon from "@mui/icons-material/DataObject";
 import DescriptionIcon from "@mui/icons-material/Description";
 import BrushIcon from "@mui/icons-material/Brush";
@@ -12,24 +10,15 @@ import LanguageIcon from "@mui/icons-material/Language";
 
 export default {
   name: "Konwit Maikoksung",
-  title: "Front end developer",
+  title: "Developer",
 
   birthday: "21th October 1996",
-  email: "Kon.wit@hotmail.com",
+  email: "konvvit@gmail.com",
   Job: "Freelancer",
   Phone: "0704601711",
+  Address: "Sweden, Gävle",
 
   socials: {
-    Facebook: {
-      link: "https://www.facebook.com",
-      text: "MyFacebook",
-      icon: <FacebookIcon />,
-    },
-    X: {
-      link: "https://twitter.com/",
-      text: "Mytwitter",
-      icon: <XIcon />,
-    },
     LinkIn: {
       link: "https://www.linkedin.com/in/konwit-maikhoksung-306a53205/",
       text: "MyLinkIn",
@@ -130,25 +119,19 @@ export default {
         "Typescript",
         "Bootstrap",
         "Material Ui",
+        "Tailwind CSS",
+        "API",
+        "UX",
+        "UI",
       ],
     },
     {
       title: "Back-end",
-      description: [
-        "No experience yet",
-        "No experience yet",
-        "No experience yet",
-        "No experience yet",
-      ],
+      description: ["Firebase", "Nodejs"],
     },
     {
       title: "Databases",
-      description: [
-        "No experience yet",
-        "No experience yet",
-        "MySQL",
-        "No experience yet",
-      ],
+      description: ["Firebase", "MongoDB", "MySQL"],
     },
     {
       title: "Source Control",
@@ -307,7 +290,7 @@ export default {
       ],
     },
     {
-      tag: "Java",
+      tag: "java",
       images: [
         "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
       ],
