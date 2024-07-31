@@ -1,6 +1,6 @@
 import React from "react";
 import "./Resume.css";
-import { Grid, Typography, Icon, TextField } from "@mui/material";
+import { Grid, Typography, Icon } from "@mui/material";
 import resumeData from "../../utils/resumeData";
 import CustomeTimeline, {
   CustomeTimelineSeparator,

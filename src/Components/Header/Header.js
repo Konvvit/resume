@@ -12,7 +12,6 @@ import "./Header.css";
 const Header = (props) => {
   // Extracting the current path
   console.log("Resume");
-  const pathName = props?.location?.pathname;
 
   return (
     <Navbar expand="lg" sticky="top" className="header">

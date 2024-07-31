@@ -1,5 +1,6 @@
 // Import necessary React components and hooks
-import React, { useState, Provider } from "react";
+import React, { useState } from "react";
+import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
 import Profile from "./Components/Profile/Profile";

@@ -74,7 +74,7 @@ const Portfolio = () => {
           {/* Map through projects and display based on selected tab */}
           {resumeData.projects.map((project) => (
             <>
-              {tabValue == project.tag || tabValue == "All" ? (
+              {tabValue === project.tag || tabValue === "All" ? (
                 <Grid item key={project.title} xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card
