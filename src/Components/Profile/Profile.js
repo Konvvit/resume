@@ -36,8 +36,8 @@ const Profile = () => {
 
   // Define URLs for both CV versions
   const cvUrls = {
-    en: "https://example.com/your_cv_english.pdf", // Replace with your actual English CV URL
-    sv: "https://example.com/your_cv_swedish.pdf", // Replace with your actual Swedish CV URL
+    en: "https://firebasestorage.googleapis.com/v0/b/resume-db8cc.appspot.com/o/Cv%202024%20(Eng).pdf?alt=media&token=dc7965a4-73af-48f4-9651-58ef0452f313",
+    sv: "https://firebasestorage.googleapis.com/v0/b/resume-db8cc.appspot.com/o/Cv%202024%20(Swe).pdf?alt=media&token=10565f8f-5320-4f5a-81be-418bf2899664",
   };
 
   return (
