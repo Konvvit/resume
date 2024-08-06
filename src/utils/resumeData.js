@@ -16,7 +16,7 @@ export default {
   email: "konvvit@gmail.com",
   Job: "Freelancer",
   Phone: "0704601711",
-  Address: "Sweden, Gävle",
+  Address: "Sweden, Sveg",
 
   socials: {
     LinkIn: {
@@ -40,28 +40,47 @@ export default {
     {
       title: "Thai Supermarket & Food Take away , Gävle",
       date: "2011-2011",
-      description:
-        "Restaurang/supermarket. Served as an Assistant, contributing to various aspects of daily operations within the establishment. Responsibilities ranged from dishwashing duties to actively participating in product sales. Demonstrated versatility by setting price tags and efficiently organizing and selecting products within the supermarket. Engaged in diverse tasks to ensure the smooth functioning of both the kitchen and retail areas.",
+
+      description: (
+        <>
+          • Organized and priced products.
+          <br />• Assisted in kitchen and sales operations.
+        </>
+      ),
     },
 
     {
       title: "Company name l Heartbreak hotel , Gävle",
       date: "2012-2012",
-      description:
-        "Kitchen assistant. Employment at a Restaurant: Engaged in various roles at a restaurant, primarily focused on providing exceptional customer service. Actively participated in serving food to customers, ensuring a pleasant and satisfying dining experience. Additionally, took responsibility for dishwashing duties and assisted in the preparation of food items. Played a key role in maintaining a hygienic and organized workspace, contributing to the overall efficiency of restaurant operations. ",
+      description: (
+        <>
+          • Served food and assisted in food preparation.
+          <br />• Maintained hygiene and organization in the kitchen.
+        </>
+      ),
     },
 
     {
       title: "Sykes l Sitel Group , Sveg",
       date: "Apr 2021 - Oct 2021",
-      description:
-        "Customer service. I worked as a Customer Service Representative for an company, where my responsibilities included answering phones, assisting customers with various needs such as booking and canceling tickets, providing coupons, addressing and resolving issues, and more. My role covered all aspects of customer support related to the company operations, ensuring that customer received prompt and efficient assistance for any inquiries or concerns they had.",
+      description: (
+        <>
+          • Managed customer bookings, cancellations, and coupon distribution.
+          <br /> • Resolved issues and ensured efficient customer support.
+        </>
+      ),
     },
     {
       title: "Xzakt, Gävle",
       date: "Apr 2023- Sep 2023",
-      description:
-        "Customer service. I worked as a Customer Support Representative for one of the largest electricity companies known for providing exceptional customer service. In this role, I was responsible for addressing customer inquiries, assisting them with various aspects of their interactions with the company. This included guiding customers through the process of moving in or out of their residences by facilitating the installation or uninstallation of electricity services. Additionally, I provided valuable information to customers regarding electricity prices and situations, offering recommendations for the best pricing options or courses of action",
+      description: (
+        <>
+          • Addressed customer inquiries and assisted with electricity service
+          installations.
+          <br />• Provided information on electricity prices and recommended
+          optimal pricing options.
+        </>
+      ),
     },
   ],
 
@@ -170,16 +189,86 @@ export default {
     },
 
     {
+      tag: "Javascript",
+      images: [
+        require("../assets/images/foodada0.png"),
+        require("../assets/images/foodada1.png"),
+        require("../assets/images/foodada2.png"),
+        require("../assets/images/foodada3.png"),
+        require("../assets/images/foodada4.png"),
+        require("../assets/images/foodada5.png"),
+        require("../assets/images/foodada6.png"),
+      ],
+      title: "Food Website",
+      caption: "Project i made during summer",
+      description:
+        "This project was created during the summer as an opportunity to practice my JavaScript skills. While most of my projects are built with React, this particular project focuses more on JavaScript to enhance my front-end development capabilities. It serves as a landing page, showcasing my front-end abilities without any backend functionality. Through this project, I aimed to deepen my understanding of JavaScript while continuing to improve my overall coding skills. ",
+      links: [
+        {
+          link: "https://www.google.com",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.google.com",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
+    },
+
+    {
+      tag: "Typscript",
+      images: [
+        require("../assets/images/ThisorThat0.png"),
+        require("../assets/images/ThisorThat1.png"),
+        require("../assets/images/ThisorThat2.png"),
+        require("../assets/images/ThisorThat3.png"),
+        require("../assets/images/ThisorThat4.png"),
+        require("../assets/images/ThisorThat5.png"),
+        require("../assets/images/ThisorThat6.png"),
+      ],
+      title: "This or That",
+      caption: "Mini game to find what to watch (Anime Edition)",
+      description:
+        "This project was developed over the summer using React, with a particular focus on TypeScript. It’s a fun game designed to help you decide which anime to watch. Here’s how it works: You are presented with two cards, each featuring a different anime. You choose which anime you would prefer to watch by selecting one of the cards. The other card is then randomized. You have 20 rounds to play, and at the end, the last anime card picked is the one you will watch.",
+      links: [
+        {
+          link: "https://www.google.com",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.google.com",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
+    },
+
+    {
       tag: "React",
       images: [
-        require("../assets/images/Mgame.png"),
-        require("../assets/images/Mgame1.png"),
-        require("../assets/images/Mgame2.png"),
+        require("../assets/images/CMSGroup6-0.png"),
+        require("../assets/images/CMSGroup6-1.png"),
+        require("../assets/images/CMSGroup6-2.png"),
+        require("../assets/images/CMSGroup6-3.png"),
+        require("../assets/images/CMSGroup6-4.png"),
+        require("../assets/images/CMSGroup6-5.png"),
+        require("../assets/images/CMSGroup6-6.png"),
+        require("../assets/images/CMSGroup6-7.png"),
+        require("../assets/images/CMSGroup6-8.png"),
+        require("../assets/images/CMSGroup6-9.png"),
       ],
-      title: "Memory Game",
-      caption: "School project making a memory game",
+      title: "CMS project",
+      caption:
+        "This is a school project created by my group, focused on developing a Content Management System (CMS).",
       description:
-        "For my inaugural school project, I embarked on the creation of a Memory Game—a classic and engaging endeavor built entirely with HTML, CSS, and JavaScript. The core concept centered around developing a game that could be played in two distinct modes: Player vs. Player or Player vs. AI.",
+        "This website serves as a real estate broker, introducing users to houses available in Sweden. It features agents who assist with the purchasing process, including paperwork and providing information about the properties. As a customer, you can search for houses in your city, view listings, and access detailed information, including pricing and additional features. Additionally, the website includes an admin function that requires authentication. Admin users can log in to manage the listings, enabling them to add, delete, or edit property information. ",
       links: [
         {
           link: "https://www.google.com",
@@ -195,33 +284,8 @@ export default {
         },
       ],
     },
-
     {
-      tag: "Java",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-
-    {
-      tag: "Java",
+      tag: "React",
       images: [
         "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
       ],
@@ -244,168 +308,7 @@ export default {
       ],
     },
     {
-      tag: "Java",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Python",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "java",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Java",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Java",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Python",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Python",
-      images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
-      ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
-      links: [
-        {
-          link: "https://www.google.com",
-          icon: <GitHubIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
-          icon: <LanguageIcon />,
-        },
-      ],
-    },
-    {
-      tag: "Python",
+      tag: "React",
       images: [
         "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
       ],

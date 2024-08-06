@@ -131,6 +131,16 @@ const Portfolio = () => {
           <Typography className="projectDialog_description">
             {projectDialog.description}
           </Typography>
+
+          {/* Render project tags */}
+          <div className="project-tags">
+            {projectDialog.tags &&
+              projectDialog.tags.map((tag, index) => (
+                <span key={index} className="project-tag">
+                  {tag}
+                </span>
+              ))}
+          </div>
         </DialogContent>
 
         {/* Display project links */}

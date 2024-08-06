@@ -13,6 +13,7 @@ const Header = (props) => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleHireMeClick = () => {
+    console.log("Hire Me button clicked!");
     navigate("/Contact"); // Navigate to the Contact page
   };
 
