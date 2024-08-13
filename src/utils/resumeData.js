@@ -169,7 +169,7 @@ export default {
         require("../assets/images/Taverna3.png"),
       ],
       title: "Taverna Restaurant",
-      caption: "School Project: Family-Friendly Restaurant Website ",
+      caption: "Family-Friendly Restaurant Website ",
       description:
         "As part of my academic studies, I undertook a compelling project focused on developing a dynamic website for a family-friendly restaurant. The primary objective of this project was to create an online platform that facilitated seamless ordering experiences for customers directly from their tables",
       links: [
@@ -199,8 +199,8 @@ export default {
         require("../assets/images/foodada5.png"),
         require("../assets/images/foodada6.png"),
       ],
-      title: "Food Website",
-      caption: "Project i made during summer",
+      title: "Foodada",
+      caption: "Single page application",
       description:
         "This project was created during the summer as an opportunity to practice my JavaScript skills. While most of my projects are built with React, this particular project focuses more on JavaScript to enhance my front-end development capabilities. It serves as a landing page, showcasing my front-end abilities without any backend functionality. Through this project, I aimed to deepen my understanding of JavaScript while continuing to improve my overall coding skills. ",
       links: [
@@ -231,7 +231,8 @@ export default {
         require("../assets/images/ThisorThat6.png"),
       ],
       title: "This or That",
-      caption: "Mini game to find what to watch (Anime Edition)",
+      caption:
+        "Mini game to find what to watch (This application will be further develop)",
       description:
         "This project was developed over the summer using React, with a particular focus on TypeScript. It’s a fun game designed to help you decide which anime to watch. Here’s how it works: You are presented with two cards, each featuring a different anime. You choose which anime you would prefer to watch by selecting one of the cards. The other card is then randomized. You have 20 rounds to play, and at the end, the last anime card picked is the one you will watch.",
       links: [
@@ -266,7 +267,7 @@ export default {
       ],
       title: "CMS project",
       caption:
-        "This is a school project created by my group, focused on developing a Content Management System (CMS).",
+        "Group project, focused on developing a Content Management System (CMS).",
       description:
         "This website serves as a real estate broker, introducing users to houses available in Sweden. It features agents who assist with the purchasing process, including paperwork and providing information about the properties. As a customer, you can search for houses in your city, view listings, and access detailed information, including pricing and additional features. Additionally, the website includes an admin function that requires authentication. Admin users can log in to manage the listings, enabling them to add, delete, or edit property information. ",
       links: [
