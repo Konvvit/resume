@@ -16,7 +16,7 @@ export default {
   email: "konvvit@gmail.com",
   Job: "Freelancer",
   Phone: "0704601711",
-  Address: "Sweden, Sveg",
+  Address: "Sweden, Gävle",
 
   socials: {
     LinkIn: {
@@ -285,24 +285,26 @@ export default {
       ],
     },
     {
-      tag: "React",
+      tag: "Typscript",
       images: [
-        "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg",
+        require("../assets/images/Gym-1.png"),
+        require("../assets/images/Gym-2.png"),
+        require("../assets/images/Gym-3.png"),
+        require("../assets/images/Gym-4.png"),
+        require("../assets/images/Gym-5.png"),
+        require("../assets/images/Gym-6.png"),
       ],
-      title: "Test prototype",
-      caption: "Just a prototype",
-      description: "This is my project description. Please fill it in",
+      title: "Gym",
+      caption: "Fitness web application built with TypeScript ",
+      description:
+        "This project is built with TypeScript to enhance my skills and understanding of the language. Click on glob below to explore the website! ",
       links: [
         {
-          link: "https://www.google.com",
+          link: "https://github.com/Konvvit/gym-typscript",
           icon: <GitHubIcon />,
         },
         {
-          link: "https://www.google.com",
-          icon: <YouTubeIcon />,
-        },
-        {
-          link: "https://www.google.com",
+          link: "https://gym-typscript.pages.dev/",
           icon: <LanguageIcon />,
         },
       ],
