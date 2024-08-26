@@ -9,7 +9,7 @@ import "./Timeline.css";
 import { Typography } from "@mui/material";
 
 // CustomTimeline component for organizing timeline items
-const CustomeTimeline = ({ title, icon, children }) => {
+const CustomTimeline = ({ title, icon, children }) => {
   return (
     <Timeline className={"timeline"}>
       {/* item header */}
@@ -31,11 +31,11 @@ const CustomeTimeline = ({ title, icon, children }) => {
 };
 
 // CustomTimelineSeparator component for customizing timeline separators
-export const CustomeTimelineSeparator = () => (
+export const CustomTimelineSeparator = () => (
   <TimelineSeparator className={"separator_padding"}>
     <TimelineDot variant={"outlined"} className={"timeline_dot"} />
     <TimelineConnector />
   </TimelineSeparator>
 );
 
-export default CustomeTimeline;
+export default CustomTimeline;

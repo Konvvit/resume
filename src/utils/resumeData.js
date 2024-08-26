@@ -10,7 +10,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 
 export default {
   name: "Konwit Maikoksung",
-  title: "Developer",
+  title: "Junior Web Developer",
 
   birthday: "21th October 1996",
   email: "konvvit@gmail.com",
@@ -33,7 +33,7 @@ export default {
 
   // About section
   about:
-    "Hello, My name is Konwit Maikhoksung I graduated from Polhemsskolan in 2016 after completing the Technology Program with a focus on Information Media. It's a choice I have never regretted.Now I want to apply the knowledge I have gained and share it, while also aiming to learn new skills. Developing and becoming an expert in what I do is something I highly value. The world of technology is infinite, and what is relevant today may be outdated tomorrow, so I consider it crucial to stay constantly updated. Personally, I am active and energetic, striving to make things happen. So far, a high pace has not been a problem for me. Challenges may seem like a worn-out word, but I appreciate feeling challenged, solving problems, and learning new things that I was not familiar with before.I believe I have the ability to quickly learn new things, and I am thorough and focused. I consider these qualities positive, regardless of the type of work. Problem-solving is one of my strengths facing a problem and trying to solve it is something I truly appreciate.I have experience working both independently and in a team, and I consider myself adaptable and easy to work with..",
+    "Hello, My name is Konwit Maikhoksung. I graduated from Polhemsskolan in 2016 with a focus on Information Media through the Technology Program. This decision has been highly rewarding, and I am enthusiastic about applying and sharing my knowledge while continuously learning new skills. I am passionate about both personal and professional growth, particularly in the ever-evolving field of technology. Staying updated with the latest advancements is crucial to me, as today’s innovations can quickly become outdated. I view challenges as opportunities for learning and problem-solving. My quick learning ability, attention to detail, and focus are traits I believe are valuable in any role. I take pride in my problem-solving skills and enjoy addressing challenges with effective solutions. With experience working both independently and as part of a team, I am known for my adaptability and collaborative nature. I am eager to bring these strengths to new challenges and opportunities...",
 
   // Work experiences
   experiences: [
@@ -86,6 +86,12 @@ export default {
 
   // Education details
   educations: [
+    {
+      title: "Front end developer, KYH anywhere",
+      date: "Aug 2023-present",
+      description:
+        "Starting as a junior front-end developer, I'm on a journey to become a full-stack developer.",
+    },
     {
       title:
         "Teknikprogrammet, Informations- medieteknik, Polhemsskolan, Gävle",

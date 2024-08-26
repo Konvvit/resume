@@ -2,8 +2,8 @@ import React from "react";
 import "./Resume.css";
 import { Grid, Typography, Icon } from "@mui/material";
 import resumeData from "../../utils/resumeData";
-import CustomeTimeline, {
-  CustomeTimelineSeparator,
+import CustomTimeline, {
+  CustomTimelineSeparator,
 } from "../../Components/Timeline/Timeline";
 import WorkIcon from "@mui/icons-material/Work";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -23,8 +23,7 @@ const Resume = () => {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="body2" className="aboutme_text">
-            {" "}
-            {resumeData.about}
+            {resumeData.about} {/* Display the 'about' text from resumeData */}
           </Typography>
         </Grid>
       </Grid>
@@ -40,35 +39,39 @@ const Resume = () => {
           <Grid container className="resume_timeline">
             {/* Experiences */}
             <Grid item sm={12} md={6}>
-              <CustomeTimeline title="Work Experience" icon={<WorkIcon />}>
-                {resumeData.experiences.map((experiences) => (
-                  <TimelineItem>
-                    <CustomeTimelineSeparator />
+              <CustomTimeline title="Work Experience" icon={<WorkIcon />}>
+                {resumeData.experiences.map((experience, index) => (
+                  <TimelineItem key={index}>
+                    {" "}
+                    {/* Added key for each TimelineItem */}
+                    <CustomTimelineSeparator />
                     <TimelineContent className="timeline_content">
                       <Typography className="timeline_title">
-                        {experiences.title}
+                        {experience.title}
                       </Typography>
                       <Typography variant="caption" className="timeline_date">
-                        {experiences.date}
+                        {experience.date}
                       </Typography>
                       <Typography
                         variant="body2"
                         className="timeline_description"
                       >
-                        {experiences.description}
+                        {experience.description}
                       </Typography>
                     </TimelineContent>
                   </TimelineItem>
                 ))}
-              </CustomeTimeline>
+              </CustomTimeline>
             </Grid>
 
             {/* Educations */}
             <Grid item sm={12} md={6}>
-              <CustomeTimeline title="Education" icon={<SchoolIcon />}>
-                {resumeData.educations.map((education) => (
-                  <TimelineItem>
-                    <CustomeTimelineSeparator />
+              <CustomTimeline title="Education" icon={<SchoolIcon />}>
+                {resumeData.educations.map((education, index) => (
+                  <TimelineItem key={index}>
+                    {" "}
+                    {/* Added key for each TimelineItem */}
+                    <CustomTimelineSeparator />
                     <TimelineContent className="timeline_content">
                       <Typography className="timeline_title">
                         {education.title}
@@ -85,7 +88,7 @@ const Resume = () => {
                     </TimelineContent>
                   </TimelineItem>
                 ))}
-              </CustomeTimeline>
+              </CustomTimeline>
             </Grid>
           </Grid>
         </Grid>
@@ -100,8 +103,10 @@ const Resume = () => {
 
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-around">
-            {resumeData.services.map((service) => (
-              <Grid item xs={12} sm={6} md={3}>
+            {resumeData.services.map((service, index) => (
+              <Grid item xs={12} sm={6} md={3} key={index}>
+                {" "}
+                {/* Added key for each Grid item */}
                 <div className="service">
                   <Icon className="service_icon">{service.icon}</Icon>
                   <Typography className="service_title" variant="h6">
@@ -121,14 +126,22 @@ const Resume = () => {
       <Grid container spacing={3} className="section graybg pb_45 p_50">
         <Grid item xs={12}>
           <Grid container justify="space-between" spacing={3}>
-            {resumeData.skills.map((skill) => (
-              <Grid item xs={12} sm={6} md={3}>
+            {resumeData.skills.map((skill, index) => (
+              <Grid item xs={12} sm={6} md={3} key={index}>
+                {" "}
+                {/* Added key for each Grid item */}
                 <Paper elevation={0} className="skill">
                   <Typography variant="h6" className="skills_title">
                     {skill.title}
                   </Typography>
-                  {skill.description.map((element) => (
-                    <Typography variant="body2" className="skill_description">
+                  {skill.description.map((element, elementIndex) => (
+                    <Typography
+                      variant="body2"
+                      className="skill_description"
+                      key={elementIndex}
+                    >
+                      {" "}
+                      {/* Added key for each skill description */}
                       <TimelineDot
                         variant={"outlined"}
                         className="timeline_dot"

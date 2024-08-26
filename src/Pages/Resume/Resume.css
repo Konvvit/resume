@@ -1,33 +1,44 @@
 /* About me section styling */
 .aboutme_text {
     color: darkslategray;
+    /* Set text color */
     font-size: smaller;
+    /* Use smaller font size */
     line-height: 22px !important;
+    /* Set line height with !important to override other styles */
     white-space: pre-line;
+    /* Preserve whitespace and line breaks */
 }
 
 /* End of About me section styling */
 
 /* Timeline section styling */
-.resume_timeline .timeline_content .Timeline_title {
+.resume_timeline .timeline_content .timeline_title {
     font-size: 16px;
+    /* Set font size for timeline title */
     font-weight: 500;
+    /* Set font weight for timeline title */
 }
 
 .resume_timeline .timeline_content .timeline_date {
     color: darkslategray;
+    /* Set text color for timeline date */
 }
 
 .resume_timeline .timeline_content .timeline_description {
     color: gray;
+    /* Set text color for timeline description */
     font-size: small;
+    /* Set font size for timeline description */
     margin-top: 6px;
+    /* Add margin above description */
 }
 
-.resume_timeline{
+.resume_timeline {
     overflow-y: auto;
-        /* Set a max-height to limit the height and trigger the scrollbar */
-        max-height: 300px;
+    /* Allow vertical scrolling */
+    max-height: 300px;
+    /* Set max height to trigger scrollbar */
 }
 
 /* End of Timeline section styling */
@@ -35,30 +46,46 @@
 /* Services section styling */
 .service {
     height: 100%;
+    /* Set full height */
     text-align: center;
+    /* Center text */
 }
 
 .service .service_title {
     font-size: 16px;
+    /* Set font size for service title */
     font-weight: 500;
+    /* Set font weight for service title */
     line-height: 35px;
+    /* Set line height for service title */
     text-align: center;
+    /* Center service title */
 }
 
 .service .service_description {
     color: #989898;
+    /* Set color for service description */
     border-color: var(--main-color);
+    /* Set border color (if applicable) */
     margin-right: 5px;
+    /* Add right margin */
     text-align: center;
+    /* Center description */
 }
 
 .service .service_icon {
     font-size: 46px;
+    /* Set icon size */
     margin-left: 0;
+    /* Remove left margin */
     font-weight: 300;
+    /* Set font weight for icon */
     color: darkslategray;
+    /* Set icon color */
     width: auto;
+    /* Set width to auto */
     height: auto;
+    /* Set height to auto */
 }
 
 /* End of Services section styling */
@@ -66,30 +93,46 @@
 /* Skills section styling */
 .skill {
     border-radius: 8px;
+    /* Round corners */
     padding: 10px;
+    /* Add padding */
     box-shadow: 0px 0px 48px 0px rgba(4, 5, 4, 0.08);
+    /* Add shadow for depth */
     min-height: 186px;
+    /* Set minimum height */
     height: 100%;
+    /* Set full height */
 }
 
 .skill .skill_title {
     font-size: 14px;
+    /* Set font size for skill title */
     font-weight: 500;
+    /* Set font weight for skill title */
     line-height: 35px;
+    /* Set line height for skill title */
 }
 
 .skill .skill_description {
     display: flex;
+    /* Use flexbox for layout */
     align-items: center;
+    /* Center items vertically */
     color: #989898;
+    /* Set color for skill description */
     font-weight: 400;
+    /* Set font weight for description */
     line-height: 18px;
+    /* Set line height for description */
 }
 
 .skill .skill_description .timeline_dot {
     border-color: var(--main-color);
+    /* Set border color for dot */
     padding: 2px;
+    /* Add padding */
     margin-right: 5px;
+    /* Add right margin */
 }
 
 /* End of Skills section styling */
@@ -97,23 +140,32 @@
 /* Contacts section styling */
 .contactInfo_item {
     font-size: 14px;
+    /* Set font size for contact info */
     color: #787878;
+    /* Set color for contact info */
     line-height: 34px;
+    /* Set line height for contact info */
 }
 
 .contactInfo_item>span {
     color: black;
+    /* Set color for span inside contact info item */
     font-weight: 500;
+    /* Set font weight for span */
 }
 
 .contactInfo_socialsContainer {
     margin-top: 25px;
+    /* Add top margin for social container */
 }
 
 .contactInfo_social>a>.MuiSvgIcon-root {
     font-size: 16px;
+    /* Set size for social icons */
     margin-right: 10px;
+    /* Add right margin for icons */
     color: black;
+    /* Set color for icons */
 }
 
 /* End of Contacts section styling */

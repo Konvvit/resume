@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React, { useState } from "react";
-import CustomTimeline, { CustomeTimelineSeparator } from "../Timeline/Timeline";
+import CustomTimeline, { CustomTimelineSeparator } from "../Timeline/Timeline";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import resumeData from "../../utils/resumeData";
 import "./Profile.css";
@@ -11,7 +11,7 @@ import DownloadButton from "../Button/DownloadButton";
 // CustomTimelineItem component to represent each item in the timeline
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
-    <CustomeTimelineSeparator />
+    <CustomTimelineSeparator />
     <TimelineContent className="timeline_content">
       {link ? (
         <Typography className="timelineItem_text">
